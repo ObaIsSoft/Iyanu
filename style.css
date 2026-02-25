@@ -5,19 +5,20 @@
     --font-accent: 'Montserrat', sans-serif;
 
     /* Colors */
-    --color-indigo: #2E1F36;
-    /* Dim Purple */
-    --color-indigo-light: #422F4C;
-    --color-bone: #F0F4F8;
-    /* Pale Sky Blue White */
-    --color-ivory: #B8E1FF;
-    /* Sky Blue */
-    --color-charcoal: #1D1424;
-    /* Very Dark Purple */
-    --color-gray: #71A1C3;
-    /* Muted Sky Blue */
-    --color-border: rgba(46, 31, 54, 0.1);
-    --color-border-light: rgba(184, 225, 255, 0.2);
+    --color-indigo: #F26419;
+    /* Vibrant Orange for dark backgrounds counterpart */
+    --color-indigo-light: #F68B50;
+    /* Lighter Orange for hovers */
+    --color-bone: #FAFAFA;
+    /* Off-White for main background */
+    --color-ivory: #FFFFFF;
+    /* Pure White */
+    --color-charcoal: #2B2C28;
+    /* Dark muted color for text on light backgrounds */
+    --color-gray: #AE5E33;
+    /* Muted orange/brown for secondary text on orange background */
+    --color-border: rgba(242, 100, 25, 0.1);
+    --color-border-light: rgba(250, 250, 250, 0.2);
 
     /* Spacing */
     --space-xs: 0.5rem;
@@ -83,6 +84,11 @@ a {
 
 .bg-dark {
     background-color: var(--color-indigo);
+    background-image: linear-gradient(rgba(174, 94, 51, 0.4), rgba(43, 44, 40, 0.6)), url('/theme-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: var(--color-ivory);
 }
 
@@ -254,7 +260,7 @@ a {
     margin-left: max(2em, 20vw);
     max-width: 400px;
     line-height: 1.8;
-    color: var(--color-gray);
+    color: var(--color-bone);
     border-left: 1px solid var(--color-border-light);
     padding-left: var(--space-sm);
 }
@@ -418,15 +424,20 @@ a {
 
 /* About Section */
 .about-section {
-    padding: var(--space-xl) var(--space-md);
-    margin-top: var(--space-xl);
+    padding: 0 var(--space-md);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    /* Keep it contained like the original */
 }
 
 .about-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-xl);
+    width: 100%;
     align-items: center;
+    /* Center everything vertically in the grid by default */
 }
 
 @media (min-width: 900px) {
@@ -435,27 +446,15 @@ a {
     }
 }
 
-.about-image-container {
-    width: 100%;
-    position: relative;
-}
-
-.about-image-container::before {
-    content: '';
-    display: block;
-    padding-top: 125%;
-    /* 4:5 Aspect ratio */
-}
-
 .about-image {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: 75vh;
+    /* So it's tall but doesn't hit the screen edges completely */
     object-fit: cover;
-    border-radius: 4px;
-    /* Slight softening for the editorial look */
+    object-position: center 20%;
+    /* Nudge image focus slightly up to keep face in frame */
+    border-radius: 8px;
+    /* Restoring sleek round corners since it doesn't touch the edge anymore */
 }
 
 .about-content {
