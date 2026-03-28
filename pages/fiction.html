@@ -6,13 +6,9 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiction | Iyanuoluwa Adenle</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -22,7 +18,34 @@
     <main style="padding-top: calc(var(--space-xl) * 1.5);">
         <section class="section container">
             <h1 class="hero-title">Fiction.</h1>
-            <p class="text-accent mb-lg">Coming soon.</p>
+
+            <div class="holding-layout">
+                <div class="holding-text">
+                    <p class="holding-statement">
+                        Stories are gathering.<br>
+                        <em>Check back soon.</em>
+                    </p>
+                </div>
+                <!-- Skeleton preview -->
+                <div class="pub-list" style="margin-top: var(--space-xl); opacity: 0.35; pointer-events: none;">
+                    <div class="pub-year-group">
+                        <p class="pub-year">— — — —</p>
+                        <div class="pub-entry pub-skeleton">
+                            <span class="pub-title skeleton-line" style="width: 48%;"></span>
+                            <span class="pub-venue skeleton-line" style="width: 16%;"></span>
+                        </div>
+                        <div class="pub-entry pub-skeleton">
+                            <span class="pub-title skeleton-line" style="width: 62%;"></span>
+                            <span class="pub-venue skeleton-line" style="width: 20%;"></span>
+                        </div>
+                        <div class="pub-entry pub-skeleton">
+                            <span class="pub-title skeleton-line" style="width: 40%;"></span>
+                            <span class="pub-venue skeleton-line" style="width: 14%;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 

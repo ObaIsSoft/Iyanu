@@ -16,39 +16,469 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 
-<body class="bg-dark" style="overflow: hidden; height: 100vh;">
-    <!-- App container for injected nav -->
+<body class="no-scroll-indicator no-footer no-mobile-name" style="overflow: hidden;">
     <div id="app"></div>
 
-    <main>
-        <section class="section container bg-dark about-section"
-            style="height: 100vh; overflow: hidden; display: flex; align-items: center; padding-top: var(--space-xl);">
-            <div class="about-grid">
-                <img src="/SDIM1428 copy.jpg" alt="Iyanuoluwa Adenle" class="about-image" />
-                <div class="about-content">
-                    <p>Iyanuoluwa Adenle is a writer living in Lagos. She has a BA in Linguistics and African
-                        Languages
-                        (Yorùbá).</p>
-                    <p>She is curious about the physical and non-physical spaces we occupy and how we navigate our
-                        individual and collective realities with language as a witness. Her practice is
-                        nostalgia-driven
-                        and research-based, as she is investigating the in-betweenness of the body, the unreliable
-                        nature of memory and the politics of place.</p>
-                    <p>Her writings have appeared in The Poetry Review, Chestnut Review, Banshee Lit, Lolwe, and
-                        elsewhere.</p>
-                    <p>Adenle is a 2024 Lantern Art Space Fellow, 2024 Ubwali Masterclass Participant, and the
-                        winner of
-                        the 2024 Kofi Awoonor Poetry Prize. She was selected for the 2025 Tender Visions
-                        Commissioning
-                        Project.</p>
-                    <a href="mailto:iyanu@example.com" class="btn btn-primary mt-lg text-accent">Start a
-                        Conversation</a>
-                </div>
+    <main style="height: 100vh; overflow: hidden;">
+        <div class="about-split">
+
+            <!-- Left: static photo -->
+            <div class="about-photo-panel">
+                <a href="/" class="about-mobile-name nav-transition-link">Iyanuoluwa Adenle</a>
+                <img src="/SDIM1428 copy.jpg" alt="Iyanuoluwa Adenle" />
             </div>
-        </section>
+
+            <!-- Right: sliding content panels -->
+            <div class="about-content-panel">
+
+                <div class="panel-track-wrapper">
+                    <div class="panel-track" id="panelTrack">
+
+                        <!-- Panel 0: Bio -->
+                        <div class="panel-slide">
+                            <p class="panel-name">Bio</p>
+                            <div class="about-content">
+                                <p>Iyanuoluwa Adenle (she/her) is a writer and curator living in Lagos, Nigeria. Writing across poetry and essays, her works make a conscious attempt to explore the human condition — grief, loss, and love — driven by a curiosity about how memory, time, and place work, and how we navigate life with language as a witness.</p>
+                                <p>Her practice is nostalgia-driven and research-based. She is currently investigating the in-betweenness of the body, the unreliable nature of memory, and the politics of place — writing into mental health, displacement, sexuality, gender, and religion, and the different ways one shows up in the world.</p>
+                                <p>Her writings have appeared in The Poetry Review, Chestnut Review, Banshee Lit, Agbowo, Lolwe, Tender Photo, Maroko, Pepper Coast Lit, Olongo Africa, and elsewhere. She is the winner of the 2024 Kofi Awoonor Poetry Prize, a 2024 Lantern Art Space Fellow, and was selected for the 2025 Tender Visions Commissioning Project.</p>
+                                <p>As a curator, she investigates work that explores intersectional African identities — creating space for the possibilities of boundary-pushing ideas, and archiving the connections between traditional and contemporary art forms. She has contributed to Nataal Media, Art Network Africa, Pavillon 54, and Omenai, where she serves as Head Writer.</p>
+                                <a href="mailto:adenleiyanuoluwa@gmail.com" class="btn btn-outline mt-lg text-accent">Start a Conversation</a>
+                            </div>
+                            <p class="panel-label" style="margin-top: var(--space-lg);">Education</p>
+                            <div class="press-list">
+                                <div class="press-item">
+                                    <span class="text-accent">In view — MA</span>
+                                    <h4 class="press-title">African and Diaspora Studies — University of Lagos</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2019 — BA</span>
+                                    <h4 class="press-title">Linguistics and African Languages — Obafemi Awolowo University, Ile-Ife</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 1: Distinctions -->
+                        <div class="panel-slide">
+                            <p class="panel-name">Distinctions</p>
+
+                            <p class="panel-label">Awards & Honours</p>
+                            <div class="press-list">
+                                <div class="press-item">
+                                    <span class="text-accent">2024</span>
+                                    <h4 class="press-title">Winner, Kofi Awoonor Poetry Prize — for the poem "Babe"</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2024</span>
+                                    <h4 class="press-title">Longlist, Unserious Collective Fellowship</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2019</span>
+                                    <h4 class="press-title">Finalist, SEVHAGE/Angya Poetry Prize</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2018</span>
+                                    <h4 class="press-title">Top 100, Nigerian Students Poetry Prize</h4>
+                                </div>
+                            </div>
+
+                            <p class="panel-label">Residencies & Fellowships</p>
+                            <div class="press-list">
+                                <div class="press-item">
+                                    <span class="text-accent">2025</span>
+                                    <h4 class="press-title">Obsidian Foundation Online Retreat</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2025</span>
+                                    <h4 class="press-title">Tender Visions Commissioning Project</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2024</span>
+                                    <h4 class="press-title">The Lantern Art/Space Fellowship — The Sahara Centre & Goethe Institut, Lagos</h4>
+                                </div>
+                            </div>
+
+                            <p class="panel-label">Selected Masterclasses</p>
+                            <div class="press-list">
+                                <div class="press-item">
+                                    <span class="text-accent">2025</span>
+                                    <h4 class="press-title">Tender Visions Masterclass — Maaza Mengiste, Billy Kahora & Wale Lawal</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2024</span>
+                                    <h4 class="press-title">Ubwali Literary Masterclass — Keletso Mopai, Frances Ogamba & more</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2019</span>
+                                    <h4 class="press-title">Fusing Poetry and Fiction — Bernadine Evaristo</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2019</span>
+                                    <h4 class="press-title">Poetry Masterclass — Kaveh Akbar</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 2: Work & Community -->
+                        <div class="panel-slide">
+                            <p class="panel-name">Work & Community</p>
+
+                            <p class="panel-label">Work Experience</p>
+                            <div class="work-list">
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">Nataal Media</div>
+                                            <div class="work-meta">Contributing Writer · 2025</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>Writing on contemporary African art for Nataal Media</li>
+                                            <li>Covered Art X Lagos 2025 — artists including Sokari Douglas Camp, Dennis Osadebe, Nengi Omuku, and J. D. 'Okhai Ojeikere</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">Olongo Africa</div>
+                                            <div class="work-meta">Bilingual Arts & Culture Correspondent · Mar–Sep 2025</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>Reporting on cultural and literary news for Olongo Africa</li>
+                                            <li>Assisting with text and subtitling for film projects like Ebrohimie Road</li>
+                                            <li>Transcribing and translating interviews done in Yoruba to English</li>
+                                            <li>Researching for film projects</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">Omenai Inc.</div>
+                                            <div class="work-meta">Head Writer · Apr 2023–Present</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>Developing and managing the magazine's content calendar and editorial direction</li>
+                                            <li>Writing and editing features, art reviews, interviews, and news articles</li>
+                                            <li>Writing bi-weekly African art news for Omenai Insider on Substack</li>
+                                            <li>Ensuring quality and consistency through rigorous proofreading</li>
+                                            <li>Conducting in-depth research for long-form features; collaborating with artists, curators, and industry professionals</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">Omenai Gallery</div>
+                                            <div class="work-meta">Curator (Contract) · Aug 2023–Aug 2024</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>In-between the Ashes — solo exhibition of Kwaku Owusu Achim (19 Jul–23 Aug 2024)</li>
+                                            <li>Visions of Home: Lagos to Accra — Orry Shenjobi, Nana Bruce, Cornelius Annor, Olamide Ogunade (30 Aug–11 Oct 2024)</li>
+                                            <li>Visions of Home: A Journey Through Nigeria — Olasunkanmi Akomolehin & Bola Obatuyi (6–31 Oct 2023)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">Art Network Africa</div>
+                                            <div class="work-meta">Art Writer · Nov 2022–Oct 2024</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>Produced monthly articles on contemporary African art, boosting reader engagement by 80%</li>
+                                            <li>Researched and reviewed art exhibitions while maintaining consistency in tone and style</li>
+                                            <li>Implemented SEO best practices to boost website traffic and impressions</li>
+                                            <li>Edited for the magazine to improve readability</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">Pavillon 54</div>
+                                            <div class="work-meta">Contributing Writer · Jul 2023–Jun 2024</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>Contributed articles on the West African art scene with a focus on Lagos, Nigeria</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">Rele Art Gallery, Lagos</div>
+                                            <div class="work-meta">Assistant Curator & Communications Manager · Jan 2023</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>Assisted with the curation of Bodies! — selecting artists, writing and editing exhibition texts</li>
+                                            <li>Coordinated with artists and created content for the gallery's social media</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">June Creative Art Advisory</div>
+                                            <div class="work-meta">Administrative & Communications Manager · Sep 2021–Mar 2022</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>Liaised with artists and filmmakers for No Parking Lagos, managing communication for exhibitions and projects</li>
+                                            <li>Wrote and edited biographies, exhibition catalogues, and curated content for the In Conversation series</li>
+                                            <li>Managed and distributed newsletters, increasing audience engagement</li>
+                                            <li>Recommended artists and filmmakers to the advisory</li>
+                                            <li>Assisted the curator and team lead on external projects (Art at Ouida)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="work-item">
+                                    <div class="work-header">
+                                        <div>
+                                            <div class="work-title">RovingHeights Nigeria Ltd</div>
+                                            <div class="work-meta">Bookstore & Sales Manager · Dec 2020–Sep 2021</div>
+                                        </div>
+                                        <span class="work-toggle">›</span>
+                                    </div>
+                                    <div class="work-details">
+                                        <ul>
+                                            <li>Implemented strategies that increased footfall and revenue while managing day-to-day business</li>
+                                            <li>Collated feedback from walk-in customers; analysed data and shared insights with leadership team</li>
+                                            <li>Managed store inventory ensuring minimal stock-outs</li>
+                                            <li>Maintained publisher and vendor relationships for seamless inventory management</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p class="panel-label">Editorial</p>
+                            <div class="press-list">
+                                <div class="press-item">
+                                    <span class="text-accent">2024–Present</span>
+                                    <h4 class="press-title">Administrative and Communications Manager — Brown Bamboo</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2022–Present</span>
+                                    <h4 class="press-title">Poetry Reader — ANMLY LIT</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2020–2021</span>
+                                    <h4 class="press-title">Submissions Reader — Iskanchi Magazine</h4>
+                                </div>
+                            </div>
+
+                            <p class="panel-label">Volunteering</p>
+                            <div class="press-list">
+                                <div class="press-item">
+                                    <span class="text-accent">2023 / 2024 / 2025</span>
+                                    <h4 class="press-title">Press — Art X Lagos</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2023</span>
+                                    <h4 class="press-title">Teaching Mentor — Creative Writers Workshop, University of Ilorin</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2018 / 2019 / 2022</span>
+                                    <h4 class="press-title">Volunteer — Ake Arts and Book Festival</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2020</span>
+                                    <h4 class="press-title">Researcher & Yoruba Language Lexicographer — Yoruba Word Project</h4>
+                                </div>
+                                <div class="press-item">
+                                    <span class="text-accent">2016 / 2017</span>
+                                    <h4 class="press-title">Volunteer — GOPOETHICK, Obafemi Awolowo University</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Panel 3: Workshops & Masterclasses -->
+                        <div class="panel-slide">
+                            <p class="panel-name">Workshops & Masterclasses</p>
+                            <div class="pub-list" style="margin-top: var(--space-sm);">
+                                <div class="pub-year-group">
+                                    <p class="pub-year">2025</p>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Tender Visions Masterclass</span>
+                                        <span class="pub-venue">Maaza Mengiste, Billy Kahora & Wale Lawal</span>
+                                    </div>
+                                </div>
+                                <div class="pub-year-group">
+                                    <p class="pub-year">2024</p>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Ubwali Literary Masterclass</span>
+                                        <span class="pub-venue">Keletso Mopai, Frances Ogamba, Kiprop Kimutai & more</span>
+                                    </div>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Writing About Photographs</span>
+                                        <span class="pub-venue">Emmanuel Iduma</span>
+                                    </div>
+                                </div>
+                                <div class="pub-year-group">
+                                    <p class="pub-year">2022</p>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Mapping New Bodies</span>
+                                        <span class="pub-venue">Adeola Olagunju — Center for Contemporary Art & Goethe Institute, Lagos</span>
+                                    </div>
+                                </div>
+                                <div class="pub-year-group">
+                                    <p class="pub-year">2021</p>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">The Fundamentals of Editing Fiction and Non-Fiction</span>
+                                        <span class="pub-venue">Society of Books and Magazines Editors of Nigeria</span>
+                                    </div>
+                                </div>
+                                <div class="pub-year-group">
+                                    <p class="pub-year">2020</p>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Poetry Workshop</span>
+                                        <span class="pub-venue">Dami Ajayi</span>
+                                    </div>
+                                </div>
+                                <div class="pub-year-group">
+                                    <p class="pub-year">2019</p>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Poetry Workshop</span>
+                                        <span class="pub-venue">Itiola Jones</span>
+                                    </div>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">In Life of Want — poetics of desire</span>
+                                        <span class="pub-venue">Logan February</span>
+                                    </div>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Fusing Poetry and Fiction</span>
+                                        <span class="pub-venue">Bernadine Evaristo</span>
+                                    </div>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Poetry Masterclass</span>
+                                        <span class="pub-venue">Kaveh Akbar</span>
+                                    </div>
+                                </div>
+                                <div class="pub-year-group">
+                                    <p class="pub-year">2017</p>
+                                    <div class="pub-entry">
+                                        <span class="pub-title">Poetry Masterclass</span>
+                                        <span class="pub-venue">Ruth Sutoye & Theresa Lola</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Dots + arrows -->
+                <div class="panel-bottom">
+                    <div class="panel-dots">
+                        <button class="panel-dot active" data-index="0"></button>
+                        <button class="panel-dot" data-index="1"></button>
+                        <button class="panel-dot" data-index="2"></button>
+                        <button class="panel-dot" data-index="3"></button>
+                    </div>
+                    <div class="panel-nav">
+                        <button class="panel-arrow" id="panelPrev" disabled>← Prev</button>
+                        <button class="panel-arrow" id="panelNext">Next →</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <script type="module" src="/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('panelTrack');
+            const dots = document.querySelectorAll('.panel-dot');
+            const prevBtn = document.getElementById('panelPrev');
+            const nextBtn = document.getElementById('panelNext');
+            const contentPanel = document.querySelector('.about-content-panel');
+            const TOTAL = 4;
+            let current = 0;
+            let touchStartX = 0;
+            let isDragging = false;
+
+            function goTo(index) {
+                if (index < 0 || index >= TOTAL) return;
+                current = index;
+                track.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)';
+                track.style.transform = `translateX(-${current * 25}%)`;
+                dots.forEach((d, i) => d.classList.toggle('active', i === current));
+                prevBtn.disabled = current === 0;
+                nextBtn.disabled = current === TOTAL - 1;
+            }
+
+            prevBtn.addEventListener('click', () => goTo(current - 1));
+            nextBtn.addEventListener('click', () => goTo(current + 1));
+            dots.forEach(dot => dot.addEventListener('click', () => goTo(+dot.dataset.index)));
+
+            // Keyboard navigation
+            document.addEventListener('keydown', e => {
+                if (e.key === 'ArrowLeft') goTo(current - 1);
+                if (e.key === 'ArrowRight') goTo(current + 1);
+            });
+
+            // Touch swipe with drag preview
+            contentPanel.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+                isDragging = true;
+                track.style.transition = 'none';
+            }, { passive: true });
+
+            contentPanel.addEventListener('touchmove', e => {
+                if (!isDragging) return;
+                const diff = e.changedTouches[0].screenX - touchStartX;
+                track.style.transform = `translateX(calc(-${current * 25}% + ${diff}px))`;
+            }, { passive: true });
+
+            contentPanel.addEventListener('touchend', e => {
+                isDragging = false;
+                const diff = touchStartX - e.changedTouches[0].screenX;
+                goTo(Math.abs(diff) > 50 ? current + (diff > 0 ? 1 : -1) : current);
+            }, { passive: true });
+
+            // Work experience accordion (click/tap for mobile, hover via CSS for desktop)
+            document.querySelectorAll('.work-item').forEach(item => {
+                item.addEventListener('click', () => item.classList.toggle('open'));
+            });
+
+            // Keep nav visible since page doesn't scroll
+            const nav = document.querySelector('.site-nav');
+            if (nav) nav.classList.add('scrolled');
+        });
+    </script>
 </body>
 
 </html>
